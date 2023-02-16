@@ -96,7 +96,9 @@ import DigitalAsset from './Component/DigiAsset';
 import DigiCrypto from './Component/DigiCrypto';
 import DigitalCrendential from './Component/DigiCredential';
 import Crypto from './Component/Crypto';
-import DigiContent from './Contract/AssetManagement.json';
+import DigiContent from './Component/DigiContent';
+import "./fontAwesome/css/all.css"
+// import DigiContent from './Contract/AssetManagement.json';
 function App() {
   return (  
     <React.Fragment>
@@ -111,12 +113,13 @@ function App() {
                 <Route path="/crypto" element={<DigiCrypto/>}/>
                 <Route path="/credential" element={<DigitalCrendential/>}/>
                 <Route path="/cry1" element={<Crypto/>}/>
-                <Route path='/content' exact element={<DigiContent/>}/>
+                <Route path="/content" element={<DigiContent/>}/>
            </Routes>
            <Footer/>
         </Router>
     </React.Fragment>
   );
 }
+// import DigiContent from './Component/DigiContent';
 
 export default App;
